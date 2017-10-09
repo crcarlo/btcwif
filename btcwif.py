@@ -69,7 +69,6 @@ def b58decode(v):
 
 def privToWif(priv, verbose=False) :
 	''' Produce a WIF from a private key in the form of an hex string '''
-
 	# 1 - Take a private key
 	_priv = priv.lower() # just for aesthetics
 	if verbose : print("Private key: "+_priv)
