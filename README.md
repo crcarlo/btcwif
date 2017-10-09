@@ -1,9 +1,10 @@
 # btcwif (bitcoin wif)
-This library allows you to get the WIF (wallet import format) from a private ECDSA key and vice versa.
-Algorithms are taken from https://en.bitcoin.it/wiki/Wallet_import_format
+This library allows you to get the WIF (wallet import format) from a private ECDSA key and vice versa.<br>
+Algorithms are taken from https://en.bitcoin.it/wiki/Wallet_import_format<br>
+The library is meant for Python version 3.6
 
 # Usage
-Here's an usage example
+Here's an usage example in the Python shell
 ```
 >>> import btcwif
 >>> priv = "0C28FCA386C7A227600B2FE50B7CAE11EC86D3BF1FBE471BE89827E19D72AA1D"
