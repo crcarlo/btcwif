@@ -58,14 +58,13 @@ def b58encode(hex_string) :
 	return encode
 
 def b58decode(v):
-    ''' Decode a Base58 encoded string as an integer and return a hex string '''
-    if not isinstance(v, str):
-        v = v.decode('ascii')
-    decimal = 0
-    for char in v:
-        decimal = decimal * 58 + alphabet.index(char)
-    return hex(decimal)[2:] # (remove "0x" prefix)
-
+	''' Decode a Base58 encoded string as an integer and return a hex string '''
+	if not isinstance(v, str):
+		v = v.decode('ascii')
+	decimal = 0
+	for char in v:
+		decimal = decimal * 58 + alphabet.index(char)
+	return hex(decimal)[2:] # (remove "0x" prefix)
 
 def privToWif(priv, verbose=False) :
 	''' Produce a WIF from a private key in the form of an hex string '''
